@@ -1,0 +1,356 @@
+ul li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ul{
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+    color: rgb(0, 2, 4);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+nav h1{
+    font-size: 0;
+    background-image: url(../image/logo.png);
+    width: 122px;
+    height: 46px;
+    background-repeat: no-repeat;
+}   
+nav>ul>li:hover{
+    border-bottom: 1px solid black;
+}  
+.menu-4{
+    position: relative;
+    /* color: yellow; */
+}
+/* .menu:hover{
+    color: aquamarine;
+} */
+
+.menu-sub{
+    z-index: 5000;
+    width: 700px;
+    height: 45px;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    line-height: 2.5;
+    right: -140px;
+    top:25px;
+    margin: 0 auto;
+ border: 1px solid rgb(220, 220, 220);
+    display: none;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    flex-direction: column;
+    align-items: start;
+    padding: 0 90px;
+    box-sizing: border-box;
+}
+.menu-4:hover .menu-sub{
+    color: rgb(128, 78, 12);
+    opacity: 1;
+    display: flex;
+    z-index: 1000000;
+}
+.img-1{
+    background-image: url(../image/hero-ev9-3-lg.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70vh;
+    background-position: center center;
+    box-shadow: inset 48px 54px 82px 55px rgba(0, 0, 0, 0.384);
+    padding-left: 8rem;
+    padding-top: 8rem;
+}
+.img-2{
+    background-image: url(../image/hero-ev5-lg.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 70vh;
+    background-position: center center;
+    box-shadow: inset 48px 54px 82px 55px rgba(38, 38, 38, 0.469);
+    padding-left: 8rem;
+    padding-top: 3em;
+}
+.button{
+    background-color: transparent;
+    outline: none;
+    padding: 15px 30px;
+    color: aliceblue;
+    border: 1px solid rgb(255, 255, 255);
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+.button:hover{
+    background-color: #fff;
+    color: black;
+}
+.box{
+    width: 80%;
+    height: 200px;
+    background-image: url(../image/movement-our-symbol.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    position: relative;
+}
+.box:hover{
+    width: 100%;
+}
+.box-1{
+    background-image: url(../image/movement-our-symbol.jpg);
+}
+.box-2{
+    background-image: url(../image/movement-our-movement.jpg);
+}
+.box-3{
+    background-image: url(../image/movement-our-design.jpg);
+}
+.box-4{
+    background-image: url(../image/movement-our-inspiration.jpg);
+}
+.sec-three{
+    background-color: rgb(246, 242, 237);
+    /* padding: rem 0; */
+}
+/* ========= */
+.slide-1,.slide-2,.slide-3,.slide-4{
+    background-image: url(../image/vehicles-ev9-3.jpg);
+    background-size: cover;
+    width:100%;
+    height: 70vh;
+    background-position: center center;
+    box-shadow: inset 48px 54px 82px 55px rgba(38, 38, 38, 0.469);
+}
+.slide-2{
+    background-image: url(../image/vehicles-ev5.jpg);
+}
+.slide-3{
+    background-image: url(../image/vehicles-sportage.jpg);
+}
+.div-down{
+    padding-top: 10%;
+    padding-right: 50%;
+}
+.slide-4{
+    background-image: url(../image/vehicles-ev6.jpg);
+}
+.button1{
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid black;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+.button1:hover{
+    background-color: rgb(21, 21, 21);
+    color: #fff;
+}
+@media (max-width: 767.98px) { 
+    .box{
+        width: 100%;
+    }
+    .foot li a{
+        display: none;
+    }
+    .foot2:last-child{
+    display: flex;
+    color: black;
+    }
+    .navi{
+        display: none;
+    }
+    header{
+background-color: transparent;
+    }
+    nav{
+        background-color: transparent;
+    }
+    .buttons{
+       display: none;
+    }
+}
+.foot li a{
+    font-size: small;
+    font-weight: bold;
+}
+.menu-btn,.bt{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+/* .menu-btn:hover{
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+} */
+.menu-menu{
+    display: none;
+}
+.menu-menu-d{
+    display: flex;
+}
+.menu-menu-2{
+    display: none;
+}
+.menu-menu-2-d{
+    display: flex;
+}
+.list{
+    position: relative;
+}
+.list i{
+    position: absolute;
+    right: 3px;
+    top: 7px;
+}
+.slide-img{
+    position: relative;
+    /* box-shadow: inset 14px 0px 63px 100px rgba(0,0,0,0.8); */
+}
+.slide-img img{
+    box-shadow: inset 14px 0px 63px 100px rgba(0,0,0,0.8);
+}
+.slide-img p{
+    position: absolute;
+    top: 15%;
+    left: 10%;
+}
+.buttons{
+    position: absolute;
+    top: 35%;
+    left: 7%;
+    background-color: transparent;
+    outline: none;
+    padding: 15px 30px;
+    color: aliceblue;
+    border: 1px solid rgb(255, 255, 255);
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+.buttons:hover{
+    background-color: #fff;
+    color: black;
+}
+/* style-magezin */
+.one-continer-mage{
+    width: 100%;
+    height: 72vh;
+    margin-top: 2rem;
+background-image: url(../image/206564489lhxy.jpg);
+background-position: center center;
+background-size: cover;
+position: relative;
+padding:0 ;
+}
+.mage-col-but{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: 2px solid white;
+    width: 100%;
+    height: 50%;
+}
+/* .secton-two-magezian{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+} */
+.img-mage-1{
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url(../image/hero-sm.jpg);
+}
+.img-mage-1 .p1{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+/* .magezin-img{
+    background-position: center center;
+    background-size: cover;
+    position: relative; 
+}
+.section-two-magezin-1{
+    width: 100%;
+    height: 72vh;
+    background-image: url(../image/hero-sm.jpg);
+} */
+.box6{
+    width: 100%;
+    height:44vh;
+   background-image: url(../image/copy1.jpg);
+   background-size: cover;
+   background-position: center center;
+   background-repeat: no-repeat;
+}
+.box9{
+    width: 100%;
+    height:45vh;
+}
+.box7{
+    width: 51%;
+    height:44vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../image/199249147vrbo.jpg);
+}
+.box8{
+    width: 51%;
+    height:44vh;
+    background-color: green;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../image/188262323zyja.jpg);
+}
+.box-10-mag{
+    width: 40%;
+    height: 44vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../image/188880137ifdj.jpg);
+}
+.box-11-mag{
+    width: 40%;
+    height: 44vh;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../image/);
+}
